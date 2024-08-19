@@ -2,8 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-# Defining URL is for the search query
-url = "https://www.trendyol.com/sr?q=iphone"
+# Defining URL with the user's input
+search = input("Enter the product that you want to search on Trendyol: ")
+url = "https://www.trendyol.com/sr?q="+search
 
 # Send a GET request
 response = requests.get(url)

@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: orange;
+    background-repeat: repeat-x;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 160px;
+}
+
+form{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search{
+    background-color:black;
+    background-repeat: no-repeat;
+}

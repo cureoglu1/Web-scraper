@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraper(Trendyol)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Product Scraper</h1>
+    <div class="search">
+        <h1>Enter here..</h1>
+        <form method="POST">
+            <input type="text" name="search" placeholder="Enter the prod." value="{{search}}">
+            <button type="submit">Search</button>
+        </form>
+        
+        {% if tables %}
+            <h2>Searching Results</h2>
+            {{ tables|safe }}
+        {% endif %}
+        
+    </div>
+</body>
+</html>
